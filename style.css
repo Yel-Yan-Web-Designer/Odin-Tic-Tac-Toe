@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  background: #008080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table{
+  /* border: 2px solid black; */
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+td{
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 100px;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+table tr:first-child td{
+  border-top: 0;
+}
+table tr:last-child td{
+  border-bottom: 0;
+}
+table tr td:first-child{
+  border-left: 0;
+}
+table tr td:last-child{
+  border-right: 0;
+}
+.replay{
+  background-color: black;
+  border-radius: 3px;
+  border: none;
+  color:  white;
+  font-size: 20px;
+  padding: 10px 10px;
+  margin-top: 60px;
+font-family: 'Poppins', sans-serif;
+text-align: center;
+cursor: pointer;
+}
+.replay:hover{
+  background: whitesmoke;
+  color:  black;
+  transition: 0.4s;
+}
+.endgame{
+  display: none;
+  background-color: #2F4F4F;
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  left: 41%;
+  padding-top: 30px;
+  font-size: 50px;
+  border-radius: 5px;
+  color: white;
+  text-align: center; 
+}
